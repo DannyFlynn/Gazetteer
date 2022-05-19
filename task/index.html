@@ -1,1 +1,54 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OperationGet</title>
+    <link rel="stylesheet" href="./libs/style.css" />
+  </head>
+  <body>
+    <div id="preloader">Please wait...</div>
+    <h1>Operation...GET &nbsp; Reqeusting data off a remote api!!!</h1>
+    <table class="table" id="apiTable">
+      <thead>
+        <tr>
+          <th>API Name</th>
+          <th>Description</th>
+          <th>Click Submit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Weather Station</td>
+          <td>Will retrieve a weather station in London</td>
+          <td>
+            <button id="weatherBtn" class="btn">Submit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>Will retrieve the capital of China</td>
+          <td>
+            <button id="cityBtn" class="btn">Submit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>EarthQuakes</td>
+          <td>Will retrieve the magnitude of an earthquake</td>
+          <td>
+            <button id="earthquakeBtn" class="btn">Submit</button>
+          </td>
+        </tr>
+        <tr>
+          <td id="results" colspan="3">results will appear here</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td colspan="3">2022 IT-Career-Switch-Task &copy;</td>
+      </tfoot>
+    </table>
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/app.js"></script>
+  </body>
+</html>
